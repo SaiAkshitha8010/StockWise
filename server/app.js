@@ -11,7 +11,7 @@ import cors from "cors";
 
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:5173', 'stock-wise-blond.vercel.app'],
+  origin: ['http://localhost:5173', 'https://stock-wise-blond.vercel.app'],
   credentials: true
 }));
 app.use(express.json())
@@ -33,4 +33,5 @@ app.listen(PORT, async() => {
 
 
 export default app;
+
 
